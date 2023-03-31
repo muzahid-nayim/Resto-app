@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "name": "muzahid",
+      "email": "muzahid@gmail.com",
+      "password": "loser",
+      "id": 1
+    },
+    {
+      "name": "nayim",
+      "email": "nayim@gmail.com",
+      "password": "comolokko",
+      "id": 2
+    },
+    {
+      "name": "mnhp",
+      "email": "mnhp",
+      "password": "mnhp",
+      "id": 3
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "Muzahidul Islam",
+      "address": "dhaka",
+      "contact": "01880466321",
+      "id": 1
+    }
+  ]
+}
