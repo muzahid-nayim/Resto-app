@@ -1,8 +1,24 @@
 {
   "users": [
-    
+    {
+      "name": "muzahid",
+      "email": "muzahid@gmail.com",
+      "password": "loser",
+      "id": 1
+    },
+    {
+      "name": "mnhp",
+      "email": "mnhp",
+      "password": "mnhp",
+      "id": 2
+    }
   ],
   "restaurant": [
-    
+    {
+      "name": "hotel sonargon",
+      "address": "satkhira",
+      "contact": "123",
+      "id": 1
+    }
   ]
 }

@@ -53,7 +53,7 @@ export default {
     let user = localStorage.getItem('user-info');
     // this.name = JSON.parse(user).name
     if(!user){
-      this.$router.push({name:'login'})
+      this.$router.push({name:'sign-up'})
     }
     let result  =await axios.get(' http://localhost:3000/restaurant')
     this.restaurant = result.data
