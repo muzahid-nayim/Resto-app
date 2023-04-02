@@ -1,7 +1,6 @@
 <template>
   <div class="home container">
     <h1>Welcome {{ name }} to  Update Restaurant page </h1>
-    <code>router id is {{ id }}</code>
     <form class="row g-4 form">
       <input class="col-12 p-2" type="text" name="name" placeholder="Enter name" v-model="restaurant.name">
       <input class="col-12 p-2"  type="text" name="address" placeholder="Enter address" v-model="restaurant.address">
@@ -51,9 +50,9 @@ export default {
     if(!user){
       this.$router.push({name:'sign-up'})
     }
+    this.name = JSON.parse(user).name
     const result = await axios.get(' http://localhost:3000/restaurant/' + this.id)
     this.restaurant = result.data
-    console.log(result);
   }
  
 }

@@ -19,7 +19,7 @@
               <td>{{ item.address }}</td>
               <td>
                 <router-link :to="{name:'update',params:{id:item.id}}">Update</router-link>
-                <button class="btn m-1 btn-danger" @click="deleteResto(item.id)">Delete</button>
+                <button @click="deleteResto(item.id)" class="btn m-1 btn-danger" >Delete</button>
               </td>
             </tr>
           </tbody>
@@ -51,10 +51,11 @@ export default {
 
  async mounted(){
     let user = localStorage.getItem('user-info');
-    // this.name = JSON.parse(user).name
+    
     if(!user){
       this.$router.push({name:'sign-up'})
     }
+    this.name = JSON.parse(user).name
     let result  =await axios.get(' http://localhost:3000/restaurant')
     this.restaurant = result.data
     // console.log(result);

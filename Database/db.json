@@ -7,18 +7,24 @@
       "id": 1
     },
     {
-      "name": "mnhp",
-      "email": "mnhp",
-      "password": "mnhp",
-      "id": 2
+      "name": "muzahid",
+      "email": "m",
+      "password": "m",
+      "id": 4
     }
   ],
   "restaurant": [
     {
-      "name": "hotel sonargon",
-      "address": "satkhira",
-      "contact": "123",
+      "name": "hotel marakha",
+      "address": "gulisthan",
+      "contact": "01880466361",
       "id": 1
+    },
+    {
+      "name": "restaurant 2",
+      "address": "anywhere",
+      "contact": "01880466321",
+      "id": 3
     }
   ]
 }
