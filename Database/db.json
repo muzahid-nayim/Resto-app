@@ -17,6 +17,18 @@
       "email": "mh",
       "password": "sdf",
       "id": 5
+    },
+    {
+      "name": "asdf",
+      "email": "asdf",
+      "password": "asdf",
+      "id": 6
+    },
+    {
+      "name": "f",
+      "email": "f",
+      "password": "f",
+      "id": 7
     }
   ],
   "restaurant": [

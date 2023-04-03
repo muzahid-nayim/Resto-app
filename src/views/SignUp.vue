@@ -26,7 +26,7 @@ export default {
   },
   methods:{
      async SignUp(){
-          let result = await axios.post(' http://localhost:3000/users',{
+          let result = await axios.post('https://mnhp-resto-app.netlify.app/users',{
               name:this.name,
               email:this.email,
               password:this.password

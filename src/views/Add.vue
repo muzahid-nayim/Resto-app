@@ -30,7 +30,7 @@ export default {
   methods:{
   async  add(){
       console.log(this.restaurant);
-      const result =await axios.post(' http://localhost:3000/restaurant',{
+      const result =await axios.post(' https://mnhp-resto-app.netlify.app/restaurant',{
         name:this.restaurant.name,
         address:this.restaurant.address,
         contact:this.restaurant.contact

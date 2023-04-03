@@ -30,7 +30,7 @@ export default {
     },
   methods:{
   async  Update(){
-    const result =await axios.put(' http://localhost:3000/restaurant/'+this.id,{
+    const result =await axios.put('https://mnhp-resto-app.netlify.app/restaurant/'+this.id,{
         name:this.restaurant.name,
         address:this.restaurant.address,
         contact:this.restaurant.contact
@@ -51,7 +51,7 @@ export default {
       this.$router.push({name:'sign-up'})
     }
     this.name = JSON.parse(user).name
-    const result = await axios.get(' http://localhost:3000/restaurant/' + this.id)
+    const result = await axios.get('https://mnhp-resto-app.netlify.app/restaurant/' + this.id)
     this.restaurant = result.data
   }
  

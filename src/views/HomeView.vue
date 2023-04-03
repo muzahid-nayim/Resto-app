@@ -37,7 +37,7 @@ export default {
   methods:{
   async  deleteResto(id){
       console.log(id)
-       await axios.delete(' http://localhost:3000/restaurant/'+id)
+       await axios.delete(' https://mnhp-resto-app.netlify.app/restaurant/'+id)
       window.location.reload();
     }
   },
@@ -56,7 +56,7 @@ export default {
       this.$router.push({name:'sign-up'})
     }
     this.name = JSON.parse(user).name
-    let result  =await axios.get(' http://localhost:3000/restaurant')
+    let result  =await axios.get('https://mnhp-resto-app.netlify.app/restaurant')
     this.restaurant = result.data
     // console.log(result);
   }
